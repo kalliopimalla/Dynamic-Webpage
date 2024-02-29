@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="el">
+
+<!-- Τίτλος σελίδας -->
+
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title> Προσθήκη νέου εγγράφου  </title>
+<link rel="stylesheet" href="login.css"/>
+</head>
+
+
+<!-- Κύριο μέρος ιστοσελίδας  -->
+
+<body>
+
+
+<center>
+
+<div class="text1">
+<p><b>Προσθήκη νέου εγγράφου</b></p>
+</div>
+
+
+<form action="newDocument_check.php" method="POST" class="login_form">
+				
+				<div>
+					<label class="labellogin">Αύξων αριθμός </label>
+					<input type="number" name="id" class="textlogin">
+				</div>
+                
+<br>
+<br>
+
+				<div>
+					<label class="labelpassw">Τίτλος:</label>
+					<input type="text" name="title" class="textpassw">
+				</div>
+
+<br>
+<br>
+	
+                 <div>
+					<label class="labelpassw">Περιγραφή:</label>
+					<input type="text" name="description" class="textpassw">
+				</div>
+			
+<br>
+<br>	
+				<div>
+					<label class="labelpassw">Όνομα/θέση αρχείου:</label>
+					<input type="text" name="path" class="textpassw">
+				</div>
+<br>
+<br>
+				 <div>
+				<button type="submit" class="btn" name="apply">Apply</button>
+				</div>
+
+			</form>
+			
+			<div  >
+             <a href="documentTutor.php"><button class="btn" align="right">Back</button></a> 
+            </div>	
+			
+			
+</center>
+
+</body>
+</html>

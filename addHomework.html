@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="el">
+
+<!-- Τίτλος σελίδας -->
+
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title> Προσθήκη νέας εργασίας  </title>
+<link rel="stylesheet" href="login.css"/>
+</head>
+
+
+<!-- Κύριο μέρος ιστοσελίδας  -->
+
+<body>
+
+
+<center>
+
+<div class="text1">
+<p><b>Προσθήκη νέας εργασίας</b></p>
+</div>
+
+
+<form action="newHomework_check.php" method="POST" class="login_form">
+				
+				<div>
+					<label class="labellogin">Αύξων αριθμός </label>
+					<input type="number" name="id" class="textlogin">
+				</div>
+                
+<br>
+<br>
+
+				<div>
+					<label class="labelpassw">Στόχοι:</label>
+					<input type="text" name="goals" class="textpassw">
+				</div>
+
+<br>
+<br>
+	
+                 <div>
+					<label class="labelpassw">Εκφώνηση:</label>
+					<input type="text" name="details" class="textpassw">
+				</div>
+			
+<br>
+<br>	
+				<div>
+					<label class="labelpassw">Παραδοτέα:</label>
+					<input type="text" name="required" class="textpassw">
+				</div>
+<br>
+<br>
+				<div>
+					<label class="labelpassw">Ημερομήνια:</label>
+					<input type="date" name="deadline" class="textpassw">
+				</div>
+<br>
+<br>
+				 <div>
+				<button type="submit" class="btn" name="apply">Apply</button>
+				</div>
+
+			</form>
+			
+				
+			<div  >
+             <a href="homeworkTutor.php"><button class="btn" align="right">Back</button></a> 
+            </div>	
+			
+</center>
+
+</body>
+</html>

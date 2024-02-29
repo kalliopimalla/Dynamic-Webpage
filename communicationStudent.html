@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="el">
+ 
+<!-- Τίτλος σελίδας -->
+ 
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title> Επικοινωνία</title>
+<link rel="stylesheet" href="communication.css"/>
+</head>
+
+<!-- Κύριο μέρος ιστοσελίδας  -->
+<body>
+
+<!-- Επικεφαλίδα  -->
+<header>
+<div align="center" >
+<h1> Επικοινωνία</h1>
+</div>
+
+<div align="right" >
+<a href="logout.php"><button class="btn" align="right">Αποσύνδεση</button></a> 
+</div>
+
+</header>
+
+<!-- Το frame που θα χωρίζει το menu με το υπόλοπο περιεχόμενο της σελίδας  -->
+<div class="container">
+
+<nav>
+
+<div align="center">
+<div class="btn">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<br>
+<a href="http://localhost/3979partB/indexStudent.php"><button class="btn"><i class="fa fa-home"></i> Αρχική σελίδα</button></a>
+<br>
+<a href="http://localhost/3979partB/announcementStudent.php"><button class="btn"><i class="fa fa-bars"></i> Ανακοινώσεις</button></a>
+<br>
+<button class="btn"><i class="fa fa-phone"></i> Επικοινωνία</button></a>
+<br>
+<a href="http://localhost/3979partB/documentStudent.php"><button class="btn"><i class="fa fa-folder"></i> Έγγραφα μαθήματος</button></a>
+<br>
+<a href="http://localhost/3979partB/homeworkStudent.php"><button class="btn"><i class="fa fa-folder"></i> Εργασίες</button></a>
+<br>
+
+
+</div>
+</div>
+</nav>
+
+
+<!-- Το κεντρικό περιεχόμενο της σελίδας  -->
+<main>
+
+<p>Η συγκεκριμένη ιστοσελίδα θα περιέχει δύο δυνατότητες για την αποστολή e-mail στον καθηγητή:</p>
+<ul>
+<li>Μέσω web φόρμας</li>
+<li>Με χρήση e-mail διεύθυνσης</li>
+</ul>
+
+
+
+<div class="header2">
+<div align="left" >
+<h2> Αποστολή e-mail μέσω web φόρμας</h2>
+</div>
+</div>
+
+<form action="new_mail.php" method="POST" class="login_form">
+<div class="section2">
+  <!-- Πεδίο Αποστολέα -->
+  <label for="sender">Αποστολέας:</label>
+  <input type="text" id="sender" name="sender" required>
+  <br>
+  <br>
+  <!-- Πεδίο Θέματος -->
+  <label for="subject">Θέμα:</label>
+  <input type="text" id="subject" name="subject" required>
+  <br>
+  <br>
+  <!-- Πεδίο Κειμένου -->
+  <label for="message">Κείμενο:</label>
+  <textarea id="message" name="message" rows="4" required></textarea>
+  <br>
+  <br>
+
+<button type="submit" name="apply" class="btn btn-primary">Αποστολή</button>
+</form>
+</div>
+
+<hr align="right" width="90%">
+
+
+<div class="header2">
+<div align="left" >
+<h2> Αποστολή e-mail ε χρήση e-mail διεύθυνσης </h2>
+</div>
+</div>
+
+
+<p>Εναλλακτικά μπορείτε να αποστείλετε e-mail στην παρακάτω διεύθυνση ηλεκτρονικού ταχυδρομείου : <a href="https://www.microsoft.com/en-us/microsoft-365/outlook/log-in" >tutor@csd.auth.test.gr</p>
+
+
+
+</div>
+</main>
+
+
+</body>
+</html>
